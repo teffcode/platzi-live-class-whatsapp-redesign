@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Redesign</title>
+    <style>
+        :root {
+            --black: #333230;
+            --gray: #94A19D;
+            --white: #FFFFFF;
+            --dark-green: #29C1A7;
+            --light-green: #EFFFFC;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-container {
+            width: 320px;
+            height: 640px;
+            background: var(--black);
+            border-radius: 32px;
+            display: grid;
+            grid-template-rows: 160px 160px 340px;
+        }
+
+        .main-container section:nth-child(2) {
+            background: var(--dark-green);
+            border-radius: 32px;
+            grid-row: 2 / 4;
+            grid-column: 1 / 2;
+        }
+
+        .main-container section:nth-child(3) {
+            background: var(--light-green);
+            border-radius: 32px;
+            grid-row: 3 / 4;
+            grid-column: 1 / 2;
+        }
+
+        .main-container header {
+            overflow: hidden;
+        }
+
+        .main-container nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .main-container ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            color: var(--white);
+            padding: 20px;
+        }
+
+        .main-container ul li {
+            margin-right: 24px;
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <nav>
+                <img alt="hambuger menu" src="https://img.icons8.com/ios-glyphs/30/ffffff/menu--v1.png" />
+                <img alt="search"" src=" https://img.icons8.com/ios-glyphs/30/ffffff/search--v1.png" />
+            </nav>
+            <ul>
+                <li>Messages</li>
+                <li>Online</li>
+                <li>Groups</li>
+            </ul>
+        </header>
+        <section></section>
+        <section></section>
+    </div>
+</body>
+
+</html>
